@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Ремонт квартир</title>
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script>
+
+		function validate_form1()
+		{
+				valid = true;
+        if ( document.form_valid1.name.value == "" || document.form_valid1.phone.value == "")
+        {
+                alert ( "Вы заполнили не все поля." );
+                valid = false;
+        }
+        return valid;
+		}
+		function validate_form2()
+		{
+				valid = true;
+        if ( document.form_valid2.name.value == "" || document.form_valid2.phone.value == "")
+        {
+                alert ( "Вы заполнили не все поля." );
+                valid = false;
+        }
+        return valid;
+		}
+		function validate_form3()
+		{
+				valid = true;
+        if ( document.form_valid3.name.value == "" || document.form_valid3.phone.value == "")
+        {
+                alert ( "Вы заполнили не все поля." );
+                valid = false;
+        }
+        return valid;
+		}
+</script>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=80405a68-6741-47b6-821f-59639aa75f0a&lang=ru_RU">
+</script>
+</head>
+<body>
+	<header class="header">
+		<div class="container header-wrap">
+			<div class="header-logo">
+				<img src="img/header-logo.jpg" alt="logo" style="width: 100px;">
+			</div>
+			<div class="header-text">
+				<div class="header-text__contacts">
+					<span class="header-text__city">Калуга, Москва, МОs</span>
+					<a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
+				</div>
+				<div class="header-text__button wow pulse" data-wow-delay="0.5s">
+					<a href="#modal-callback" class="popup-content"><button id="button-callback" class="button button-media header-button">
+						<img class="hidden-img" src="img/header-phone.svg" alt="">
+						<span class="hidden-xs">Перезвоните мне</span></button></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<div class="main-wrap">
+				<div class="main-text">
+					<h1 class="main-text__title">
+						Внутренняя отделка помещений "под ключ"
+						<span>с гарантией качества, прописанной в&nbsp;договоре</span>
+					</h1>
+					<div class="main-advantages">
+						<div class="main-advantages__item wow rotateInDownLeft" data-wow-delay="0.2s">
+							<div class="main-advantages__img main-advantages__img-1"></div>
+							<div class="main-advantages__text">
+								Точно соблюдаем сроки
+							</div>
+						</div>
+						<!--main-avantages__item-->
+						<div class="main-advantages__item wow rotateInDownLeft" data-wow-delay="0.6s">
+							<div class="main-advantages__img main-advantages__img-2"></div>
+							<div class="main-advantages__text">
+								Рассчитаем смету на работы и материалы в день обращения
+							</div>
+						</div>
+						<!--main-avantages__item-->
+						<div class="main-advantages__item wow rotateInDownLeft" data-wow-delay="1s">
+							<div class="main-advantages__img main-advantages__img-3"></div>
+							<div class="main-advantages__text">
+								Предложим более 100 вариантов исполнения дизайна Вашего жилья
+							</div>
+						</div>
+						<!--main-avantages__item-->
+					</div>
+				</div>
+				<div class="main-image">
+					<img src="img/main/main-img.png" alt="main">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="feedback">
+		<div class="container">
+			<div class="form">
+				<h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
+				<span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+				<form action="#" class="form-media" name="form_valid1" onsubmit="return validate_form1();">
+					<input name="name" type="text" class="input input-name form__input" placeholder="Выше имя" required="required">
+					<input name="phone" type="tel" class="input input-tel form__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" required="required" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+					<button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
+				</form>
+				<div class="form__subbutton wow slideInLeft" data-wow-delay="0.2s">
+						<h3 class="form__subbutton__text">Наш менеджер перезвонит Вам в течение 60 секунд</h3>
+						<h3 class="form__subbutton__text form__subbutton__img">или перезвоните нам сами <span class="form__subbutton__tel "><br class="visible_br">+7 (495) 42-251-31</span></h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="modal mfp-hide" id="modal-callback">
+		<div class="modal__dialogs">
+			<!-- <div class="modal__close">&#10006;</div> -->
+			<div class="modal__services">
+				<div class="modal-product">
+					<div class="modal-product__img">
+						<img src="img/foma/forma1/icon1.jpg" alt="icon">
+					</div>
+					<div class="modal-product__text">
+						<h2 class="modal-product__title">Ванная комната</h2>
+						<p class="modal-product__price">135*150 - <span>31 000 руб.</span></p>
+						<p class="modal-product__price">170*170 - <span>43 000 руб.</span></p>
+					</div>
+				</div>
+				<div class="modal-product">
+					<div class="modal-product__img">
+						<img src="img/foma/forma1/icon2.jpg" alt="icon">
+					</div>
+					<div class="modal-product__text">
+						<h2 class="modal-product__title">Туалет</h2>
+						<p class="modal-product__price">135*70 - <span>14 000 руб.</span></p>
+					</div>
+				</div>
+				<div class="modal-product">
+					<div class="modal-product__img">
+						<img src="img/foma/forma1/icon3.jpg" alt="icon">
+					</div>
+					<div class="modal-product__text">
+						<h2 class="modal-product__title">Совмещенный санузел</h2>
+						<p class="modal-product__price">170*210 - <span>54 000 руб.</span></p>
+					</div>
+				</div>
+				<div class="modal__works">
+					<h2 class="modal__works__title">В стоимость работ входит</h2>
+						<p class="modal__works__text">Демонтаж старого покрытия стен и пола</p>
+						<p class="modal__works__text">Выравнивание стен гипсовыми составами</p>
+						<p class="modal__works__text">Грунтовка стен и пола антисептиком, бетоноконтактом</p>
+						<p class="modal__works__text">Монтаж кафельной плитки на полу и стенах</p>
+						<p class="modal__works__text">Установка реечного или натяжного потолка, светильников</p>
+				</div>
+			</div>
+			<div class="modal-form">
+				<h2 class="modal-form__title">Узнайте точную стоимость ремонта по телефону!</h2>
+				<span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+				<form action="#" class="modal-form-media" name="form_valid2" onsubmit="return validate_form2();" method="get">
+					<input name="name" type="text" class="input input-name modal-form__input" placeholder="Выше имя" required="required">
+					<input name="phone" type="tel" class="input input-tel modal-form__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" required="required" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+					<button id="button-submit" type="submit" class="button modal-form__button" onsubmit="yaCounter51465386.reachGoal('btnform'); return true;">Узнать стоимость</button>
+				</form>
+				<div class="modal-form__subbutton">
+						<p class="modal-form__subbutton__text">Или Вы можфете перезвонить нам сами по телефону:</p>
+						<p class="modal-form__subbutton__tel">+7 (8182) 42-51-31</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="section-title section-title_center wow fadeInUp" data-wow-delay="0.2s">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
+			<div class="slider owl-carousel owl-theme">
+				<div class="item">
+					<img src="img/portfolio/slider-image-1.jpg" alt="image">
+				</div>
+				<div class="item">
+					<img src="img/portfolio/slider-image-2.jpg" alt="image">
+				</div>
+				<div class="item">
+					<img src="img/portfolio/slider-image-3.jpg" alt="image">
+				</div>
+				<div class="item">
+					<img src="img/portfolio/slider-image-1.jpg" alt="image">
+				</div>
+				<div class="item">
+					<img src="img/portfolio/slider-image-2.jpg" alt="image">
+				</div>
+				<div class="item">
+					<img src="img/portfolio/slider-image-3.jpg" alt="image">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="price">
+		<div class="container">
+			<h2 class="section-title_center section-title price__title wow fadeInUp" data-wow-delay="0.2s">У нас очень гибкая система скидок на комплексные работы!</h2>
+			<!-- /.section-title__center section-title -->
+			<h3 class="section-subtitle price__subtitle">Прайс на наши услуги</h3>
+			<div class="price-wrap">
+				<div class="card wow fadeInUp" data-wow-delay="0.2s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-1.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.4s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-2.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт комнат и квартир</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.6s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-3.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Отделка офисных помещений</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.2s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-4.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт в новостройках</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.4s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-5.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт кухонь</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.6s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-6.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт дач и коттеджей</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.price -->
+
+<section class="order">
+		<div class="container">
+			<h2 class="section-title_center section-title order__title wow fadeInUp" data-wow-delay="0.2s">Наши специалисты готовы выехать на замер<br>в любое удобное для Вас время</h2>
+			<h3 class="section-subtitle order__subtitle">5 шагов до ремонта</h3>
+			<div class="order-wrap">
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.2s">
+					<div class="stage__img stage__img-1">
+					</div>
+					<h4 class="stage__title">Вы звоните нам или оставляете заявку</h4>
+				</div>
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.4s">
+						<div class="stage__img stage__img-2">
+						</div>
+						<h4 class="stage__title">Согласуем удобное для Вас время выезда специалиста на замер</h4>
+				</div>
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.6s">
+						<div class="stage__img stage__img-3">
+						</div>
+						<h4 class="stage__title">Рассчитываем смету согласовываем<br>с Вами</h4>
+				</div>
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.8s">
+						<div class="stage__img stage__img-4">
+						</div>
+						<h4 class="stage__title">Подписываем договор закупаем материал<br>по оптовым ценам</h4>
+				</div>
+				<div class="stage wow flipInY" data-wow-delay="1s">
+						<div class="stage__img stage__img-5">
+						</div>
+						<h4 class="stage__title">Выполняем ремонт<br>в указанные сроки</h4>
+				</div>
+			</div>
+		</div>
+		<div class="order-bottom">
+			<h2 class="order-bottom__title">Ремонт&nbsp;обойдется&nbsp;Вам&nbsp;дешевле,так&nbsp;как <br>мы используем качественные материалы по оптовым ценам</h2>
+		</div>
+	</section>
+
+<section class="reclame">
+		<div class="container">
+			<div class="advertising">
+				<div class="advertising__card advertising__card-1">
+					<h4 class="advertising__card__title">Поможем закупить все материалы<br>по оптовым ценам у проверенных поставщиков</h4>
+				</div>
+				<div class="advertising__card advertising__card-2">
+					<h4 class="advertising__card__title">Мы дадим Вам<span class="advertising__card__bold"> максимальные скидки </span>у наших партнеров для закупки материалов оптом</h4>
+				</div>
+				<div class="advertising__card advertising__card-3">
+					<h4 class="advertising__card__title">Все, что не сможете найти в городе - поможем заказать <span class="advertising__card__bold">у проверенных поставщиков</span></h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="documents">
+		<div class="container">
+			<h2 class="section-title_center section-title">Все наши гарантийные обязательства<br> подробно и прозрачно описаны в договоре</h2>
+			<div class="paper">
+				<div class="paper-card">
+					<img class="paper-card__img" src="img/documents/doc-1.jpg" alt="document">
+					<h3 class="paper-card__text">Гарантия на качество выполняемых работ</h3>
+				</div>
+				<div class="paper-card">
+					<img class="paper-card__img" src="img/documents/doc-2.jpg" alt="document">
+					<h3 class="paper-card__text">Гарантия на фиксированные цены Виды работ и цены на них прописаны в договоре</h3>
+				</div>
+				<div class="paper-card">
+					<img class="paper-card__img" src="img/documents/doc-3.jpg" alt="document">
+					<h3 class="paper-card__text">Гарантия на точное соблюдение сроков и ответственность за их невыполнение</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="lower-form">
+		<div class="container">
+			<div class="form-back">
+				<div class="form-back__left">
+					<h2 class="form-back__left__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h2>
+					<span class="form-back__left__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+					<div class="form-back-advantages">
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.2s">
+							<div class="form-back-advantages__img">1.</div>
+							<div class="form-back-advantages__text">
+								Какова площадь помещения?
+							</div>
+						</div>
+						<!--main-avantages__item-->
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.4s">
+							<div class="form-back-advantages__img">2.</div>
+							<div class="form-back-advantages__text">
+								У Вас новостройка или вторичное жилье?
+							</div>
+						</div>
+						<!--main-avantages__item-->
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.6s">
+							<div class="form-back-advantages__img">3.</div>
+							<div class="form-back-advantages__text">
+								Где находится помещение, в котором будет производиться ремонт?
+							</div>
+						</div>
+						<!--main-avantages__item-->
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.8s">
+							<div class="form-back-advantages__img">4.</div>
+							<div class="form-back-advantages__text">
+								Назначение помещения?
+							</div>
+						</div>
+						<!--main-avantages__item-->
+					</div>
+				</div>
+				<div class="form-back__right">
+					<h2 class="form-back__right__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h2>
+					<span class="form-back__right__subtitle">Для этого заполните форму ниже</span>
+					<form action="#" class="form-back-media" name="form_valid3" onsubmit="return validate_form3();">
+						<input name="name" type="text" class="input input-name form-back__input" placeholder="Выше имя" required="required">
+						<input name="phone" type="tel" class="input input-tel form-back__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required="required">
+						<button type="submit" class="button form-back__button">Рассчитать стоимость</button>
+					</form>
+						<h3 class="form-back__subbutton__text">Мы перезвоним Вам в течение 60 секунд</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="map" id="map"></div>
+		<div class="contacts">
+			<h2 class="contacts__title">Приезжайте к нам в гости!<br> Проконсультируем Вас<br> по всем вопросам ремонта</h2>
+			<div class="contacts-wrap">
+				<div class="phone-address">
+					<div class="phone-address__icon">
+						<img src="img/footer/icon-1.png" alt="icon">
+					</div>
+					<div class="phone-address__text">
+						<div class="phone-address__title">г. Москва</div>
+						<div class="phone-address__subtitle">ул. Ленинга, д. 10,<br class="visible_br"> корпус 2, оф. 308</div>
+					</div>
+				</div>
+				<div class="phone-address">
+					<div class="phone-address__icon">
+						<img src="img/footer/icon-2.png" alt="icon">
+					</div>
+					<div class="phone-address__text">
+						<div class="phone-address__title">Режим работы:</div>
+						<div class="phone-address__subtitle">с 9:00 до 18:00</div>
+					</div>
+				</div>
+				<div class="phone-address">
+					<div class="phone-address__icon">
+						<img src="img/footer/icon-3.png" alt="icon">
+					</div>
+					<div class="phone-address__text">
+						<div class="phone-address__title">Телефон:</div>
+						<div class="phone-address__subtitle">+ 7 (495) 42-251-31</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+
+<script > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51465386, "init", { id:51465386, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script><noscript><div><img src="https://mc.yandex.ru/watch/51465386" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
